@@ -130,7 +130,7 @@ contract SupplyChain {
 
     skuCount = skuCount + 1;
     emit LogForSale(skuCount);
-    /return true;
+    return true;
   }
 
   // Implement this buyItem function. 
