@@ -86,22 +86,22 @@ contract SupplyChain {
   // an Item has been added?
 
   modifier forSale(uint _sku) {
-    require(items[_sku].state == State.ForSale && items[_sku].seller != address(0);
+    require(items[_sku].state == State.ForSale && items[_sku].seller != address(0));
     _;
   }
 
   modifier sold(uint _sku) {
-     require(items[_sku].state == State.Sold && items[_sku].seller != address(0);
+     require(items[_sku].state == State.Sold && items[_sku].seller != address(0));
     _;
   }
 
   modifier shipped(uint _sku) {
-    require(items[_sku].state == State.Shipped && items[_sku].seller != address(0);
+    require(items[_sku].state == State.Shipped && items[_sku].seller != address(0));
     _;
   }
 
   modifier received(uint _sku) {
-    require(items[_sku].state == State.Received && items[_sku].seller != address(0);
+    require(items[_sku].state == State.Received && items[_sku].seller != address(0));
     _;
   }
 
